@@ -1,6 +1,6 @@
-# S5 – DeepDive diversity-through-time analyses
+# DeepDive diversity-through-time analyses
 
-Genus-level diversity through time for **Synapsida**, **Reptilia (all)** and **Reptilia (terrestrial)** from the Early Permian to the end of the Triassic (298.9–199 Ma), estimated with DeepDive (Cooper et al. 2024). DeepDive simulates fossil records under many diversification, spatial and sampling scenarios. It trains a recurrent neural network on these simulations and then uses the network to predict diversity in each time bin from the empirical occurrence data.
+Genus-level diversity through time for **Synapsida**, **Reptilia (all)** and **Reptilia (terrestrial)** from the Early Permian to the end of the Triassic estimated with DeepDive (Cooper et al. 2024). DeepDive simulates fossil records under many diversification, spatial and sampling scenarios. It trains a recurrent neural network on these simulations and then uses the network to predict diversity in each time bin from the empirical occurrence data.
 
 Each clade has its own folder with the same structure. All three were run with identical settings. They differ only in their occurrence data and in the values DeepDive's autotune step derived from that data.
 
@@ -24,20 +24,6 @@ Inside each clade folder (`<p>` = prefix):
 <p>_simulations/           simulated training and test data sets
 <p>_models/                trained model, test-set performance, empirical predictions, figures
 ```
-
-## Data sets
-
-|                                  | Synapsida               | Reptilia (all)              | Reptilia (terrestrial)    |
-|----------------------------------|-------------------------|-----------------------------|---------------------------|
-| Folder                           | `synapsida`             | `reptilia_all`              | `reptilia_terr`           |
-| Occurrences                      | 3,181                   | 3,960                       | 3,135                     |
-| Genera                           | 461                     | 682                         | 555                       |
-| Localities                       | 91                      | 189                         | 139                       |
-| Occurrences in areas 1 / 2 / 3 / 4 | 2,389 / 86 / 408 / 298 | 1,308 / 311 / 1,241 / 1,100 | 1,134 / 172 / 791 / 1,038 |
-
-Reptilia (terrestrial) is Reptilia (all) without 127 genera (823 occurrences). These are mostly marine and other aquatic reptiles (ichthyosaurs, sauropterygians, thalattosaurs, mesosaurs, …) plus pterosaurs. Every occurrence in Reptilia (terrestrial) is also in Reptilia (all).
-
-All taxa are genera. DeepDive's own files and code call them "species" (e.g. `n_species`, `total_sp`).
 
 ### Areas
 
