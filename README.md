@@ -25,20 +25,6 @@ Inside each clade folder (`<p>` = prefix):
 <p>_models/                trained model, test-set performance, empirical predictions, figures
 ```
 
-## Data sets
-
-|                                  | Synapsida               | Reptilia (all)              | Reptilia (terrestrial)    |
-|----------------------------------|-------------------------|-----------------------------|---------------------------|
-| Folder                           | `synapsida`             | `reptilia_all`              | `reptilia_terr`           |
-| Occurrences                      | 3,181                   | 3,960                       | 3,135                     |
-| Genera                           | 461                     | 682                         | 555                       |
-| Localities                       | 91                      | 189                         | 139                       |
-| Occurrences in areas 1 / 2 / 3 / 4 | 2,389 / 86 / 408 / 298 | 1,308 / 311 / 1,241 / 1,100 | 1,134 / 172 / 791 / 1,038 |
-
-Reptilia (terrestrial) is Reptilia (all) without 127 genera (823 occurrences). These are mostly marine and other aquatic reptiles (ichthyosaurs, sauropterygians, thalattosaurs, mesosaurs, …) plus pterosaurs. Every occurrence in Reptilia (terrestrial) is also in Reptilia (all).
-
-All taxa are genera. DeepDive's own files and code call them "species" (e.g. `n_species`, `total_sp`).
-
 ### Areas
 
 DeepDive calls these "regions". The `Area` column holds the codes.
