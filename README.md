@@ -1,6 +1,6 @@
-# S5 – DeepDive diversity-through-time analyses
+# DeepDive diversity-through-time analyses
 
-Genus-level diversity through time for **Synapsida**, **Reptilia (all)** and **Reptilia (terrestrial)** from the Early Permian to the end of the Triassic (298.9–199 Ma), estimated with DeepDive (Cooper et al. 2024). DeepDive simulates fossil records under many diversification, spatial and sampling scenarios. It trains a recurrent neural network on these simulations and then uses the network to predict diversity in each time bin from the empirical occurrence data.
+Genus-level diversity through time for **Synapsida**, **Reptilia (all)** and **Reptilia (terrestrial)** from the Early Permian to the end of the Triassic estimated with DeepDive (Cooper et al. 2024). DeepDive simulates fossil records under many diversification, spatial and sampling scenarios. It trains a recurrent neural network on these simulations and then uses the network to predict diversity in each time bin from the empirical occurrence data.
 
 Each clade has its own folder with the same structure. All three were run with identical settings. They differ only in their occurrence data and in the values DeepDive's autotune step derived from that data.
 
